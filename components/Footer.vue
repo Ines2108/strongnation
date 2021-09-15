@@ -12,9 +12,7 @@ export default {
 <style scoped>
 .bottom-footer{
   position: inherit;
-  background: url("~assets/strongnation2.png");
-  background-size: cover;
-  background-position: center;
+  background-color: black;
   height: 30vh;
 }
 </style>
