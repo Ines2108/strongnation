@@ -1,15 +1,18 @@
 <template>
   <div class="body">
-    <div class="header">
-      <h1>STRONG NATION® by Ines Niedermaier</h1>
+    <div class="flex-header">
+      <div class="box-strong">
+        <div class="erste-ueberschrift">
+          <h1>Get Strong</h1>
+          <div class="zweiter-text">
+            <p>by Ines Niedermaier</p>
+            <button class="button-style" type="button">
+             Vorschau ansehen
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flex-image">
-    <img src="../assets/flyer.png" height="900" width="614"/>
-    </div>
-    <p class="text">
-      Was ist Strong Nation?
-      STRONG NATION® ist ein revolutionäres, hochintensives Workout, das Dich an Deine Grenzen bringt. Die Musik ist eigens für die Workouts komponiert. Jede Kniebeuge, jeder Ausfallschritt und jede Bewegung hat ihre Entsprechung in den mitreißenden Beats. Werde eins mit der Musik und verausgabe Dich dabei vollkommen.
-    </p>
   </div>
 </template>
 
@@ -18,16 +21,14 @@
 </script>
 
 <style>
-.header {
-  background-color: slategray;
-  border: 25pt pink;
-  padding: 1vw 1vh;
-  text-align: center;
-}
-@media(max-width: 700px){
-  .body{
-    background: black;
-  }
+.flex-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: url("~/assets/ines-background.jpg");
+  padding: 21%;
+  background-position: center;
+  background-size: cover;
 }
 .body {
   background: linear-gradient(to right, whitesmoke, slategray);
@@ -39,17 +40,28 @@
   flex-flow: column;
   height:95vh;
 }
-.flyer{
-  width: 30vw;
-  height: 30vh;
-}
-.flex-image {
+.box-strong{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
 }
-.text {
-  color:black;
-  font-family: Carlito,sans-serif;
+.button-style{
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: #ff4530;
+  background-image: linear-gradient(to top left,
+  rgba(0, 0, 0, .2),
+  rgba(0, 0, 0, .2) 30%,
+  rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+  inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+.button-style:hover {
+  background-color: orangered;
 }
 </style>
