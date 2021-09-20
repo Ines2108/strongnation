@@ -15,8 +15,12 @@
     </div>
     <video-modal v-if="videoModalVisible" @close="close">
     </video-modal>
-    <div class="description-box">
-      <div class="image-box">
+    <div class="ff-block-wrap">
+      <div class="ffb-image-wrap">
+        <h2 class="was-ist-strong">Was ist Strong Nation?</h2>
+      </div>
+      <div class="ffb-content-wrap">
+        <p class="descrition">STRONG Nation™ kombiniert Eigengewichts-, Muskelaufbau-, Kardio- und Plyometrietraining. Bewegt wird sich zu Originalmusik, die speziell auf jeden einzelnen Move abgestimmt wurde. Jede Kniebeuge, jeder Ausfallschritt, jeder Burpee wird von der Musik befeuert. So schaffst du es bis zur letzten Wiederholung – und hängst noch fünf weitere dran.</p>
       </div>
     </div>
   </div>
@@ -36,12 +40,6 @@ export default {
 </script>
 
 <style>
-.flex-header {
-  background: url("~/assets/ines-background.jpg") no-repeat center;
-  background-size: cover;
-  height: 80vh;
-  position: relative;
-}
 .body {
   background: linear-gradient(to right, whitesmoke, slategray);
   max-width: 1264px;
@@ -50,8 +48,14 @@ export default {
   justify-content: space-between;
   margin: 0 auto;
   flex-flow: column;
-  height:95vh;
+  height:180vh;
   font-family: "Droid Sans Mono Slashed";
+}
+.flex-header {
+  background: url("~/assets/ines-background.jpg") no-repeat center;
+  background-size: cover;
+  height: 104vh;
+  position: relative;
 }
 .box-strong{
   display: flex;
@@ -78,13 +82,36 @@ export default {
 .button-style:hover {
   background-color: orangered;
 }
-.description-box{
+.ff-block-wrap{
+  max-width: 67.8rem;
   display: flex;
-  justify-content: center;
-
+  flex-flow: wrap;
+  position: relative;
+  padding-left: 13em;
+  padding-bottom: 32em;
 }
-.image-box{
-  height: 311px;
+.ffb-image-wrap{
+  display: flex;
+  height: 350px;
+  width: 501px;
   background: url("~/assets/strongleft.png");
+}
+.was-ist-strong {
+  display: flex;
+  height: 6vh;
+  align-self: center;
+  color: white;
+  padding-right: 50%;
+  margin-left: 10%;
+}
+.ffb-content-wrap{
+  flex: 0 0 31%;
+  min-height: 313px;
+  background: black;
+}
+.descrition{
+  color: white;
+  height: 6vh;
+  padding: 0.2em;
 }
 </style>
