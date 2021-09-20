@@ -4,31 +4,43 @@
       <div class="box-strong">
         <div class="erste-ueberschrift">
           <h1>Get Strong</h1>
-          <div class="zweiter-text">
+        <div class="zweiter-text">
             <p>by Ines Niedermaier</p>
-            <button class="button-style" type="button">
+            <button class="button-style" type="button" @click="videoModalVisible = true">
              Vorschau ansehen
             </button>
-          </div>
         </div>
+        </div>
+      </div>
+    </div>
+    <video-modal v-if="videoModalVisible" @close="close">
+    </video-modal>
+    <div class="description-box">
+      <div class="image-box">
       </div>
     </div>
   </div>
 </template>
 
 <script>
-
+export default {
+  data: () => ({
+    videoModalVisible: false
+  }),
+  methods: {
+    close () {
+      this.videoModalVisible = false
+    }
+  }
+}
 </script>
 
 <style>
 .flex-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  background-image: url("~/assets/ines-background.jpg");
-  padding: 21%;
-  background-position: center;
+  background: url("~/assets/ines-background.jpg") no-repeat center;
   background-size: cover;
+  height: 80vh;
+  position: relative;
 }
 .body {
   background: linear-gradient(to right, whitesmoke, slategray);
@@ -39,10 +51,12 @@
   margin: 0 auto;
   flex-flow: column;
   height:95vh;
+  font-family: "Droid Sans Mono Slashed";
 }
 .box-strong{
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  margin: 3em;
 }
 .button-style{
   border: 0;
@@ -53,7 +67,7 @@
   color: #fff;
   text-shadow: 1px 1px 1px #000;
   border-radius: 10px;
-  background-color: #ff4530;
+  background-color: #ff4550;
   background-image: linear-gradient(to top left,
   rgba(0, 0, 0, .2),
   rgba(0, 0, 0, .2) 30%,
@@ -63,5 +77,14 @@
 }
 .button-style:hover {
   background-color: orangered;
+}
+.description-box{
+  display: flex;
+  justify-content: center;
+
+}
+.image-box{
+  height: 311px;
+  background: url("~/assets/strongleft.png");
 }
 </style>
