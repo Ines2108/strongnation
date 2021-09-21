@@ -3,24 +3,32 @@
     <div class="flex-header">
       <div class="box-strong">
         <div class="erste-ueberschrift">
-          <h1>Get Strong</h1>
+          <h1 style="font-size: 6vh">Get Strong</h1>
         <div class="zweiter-text">
-            <p>by Ines Niedermaier</p>
+            <p style="font-size: 3vh">by Ines Niedermaier</p>
+         <div class="button-box">
             <button class="button-style" type="button" @click="videoModalVisible = true">
              Vorschau ansehen
             </button>
+         </div>
         </div>
         </div>
       </div>
     </div>
-    <video-modal v-if="videoModalVisible" @close="close">
-    </video-modal>
+    <video-modal v-if="videoModalVisible" @close="close"></video-modal>
     <div class="ff-block-wrap">
       <div class="ffb-image-wrap">
-        <h2 class="was-ist-strong">Was ist Strong Nation?</h2>
+        <h2 class="was-ist-strong">Was ist STRONG Nation™?</h2>
       </div>
       <div class="ffb-content-wrap">
-        <p class="descrition">STRONG Nation™ kombiniert Eigengewichts-, Muskelaufbau-, Kardio- und Plyometrietraining. Bewegt wird sich zu Originalmusik, die speziell auf jeden einzelnen Move abgestimmt wurde. Jede Kniebeuge, jeder Ausfallschritt, jeder Burpee wird von der Musik befeuert. So schaffst du es bis zur letzten Wiederholung – und hängst noch fünf weitere dran.</p>
+        <diy class="description">
+          <p>STRONG Nation™ kombiniert Eigengewichts-, Muskelaufbau-, Kardio- und Plyometrietraining.
+            Bewegt wird sich zu Originalmusik, die speziell auf jeden einzelnen Move abgestimmt wurde. Jede Kniebeuge, jeder Ausfallschritt,
+            jeder Burpee wird von der Musik befeuert. So schaffst du es bis zur letzten Wiederholung – und hängst noch fünf weitere dran.</p>
+        </diy>
+       <div class="link-style">
+         <a class="link-text" href="https://strong.zumba.com/de-DE/pages/class" target="_blank">Erfahre Mehr</a>
+       </div>
       </div>
     </div>
   </div>
@@ -49,7 +57,7 @@ export default {
   margin: 0 auto;
   flex-flow: column;
   height:180vh;
-  font-family: "Droid Sans Mono Slashed";
+  font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 .flex-header {
   background: url("~/assets/ines-background.jpg") no-repeat center;
@@ -60,7 +68,10 @@ export default {
 .box-strong{
   display: flex;
   justify-content: center;
-  margin: 3em;
+  margin: 7em;
+  line-height: 110%;
+}
+.button-box{
 }
 .button-style{
   border: 0;
@@ -108,10 +119,24 @@ export default {
   flex: 0 0 31%;
   min-height: 313px;
   background: black;
+  padding: 1%;
 }
-.descrition{
+.description{
   color: white;
   height: 6vh;
   padding: 0.2em;
+}
+.link-style{
+  display: flex;
+  justify-content: center;
+  background: 0 0;
+  box-shadow: inset 0 0 0 2px #ff6248;
+  padding: .75em 2em .7em;
+
+}
+.link-text{
+  text-decoration: none;
+  color: #ff6248;
+  text-transform: uppercase;
 }
 </style>

@@ -3,7 +3,7 @@
     <div class="spacer">
       <div class="logo">
         <nuxt-link to="/">
-            <img src="../assets/homelogo.png" height="86" width="66">
+            <img src="../assets/homebutton.png" height="40" width="49">
         </nuxt-link>
       </div>
     </div>
@@ -14,12 +14,17 @@
     </div>
     <div class="plan">
       <nuxt-link class="link" to="kursplan">
-        Kursplan
+        Kursinfo
       </nuxt-link>
     </div>
-    <div class="instructor">
-      <nuxt-link class="link" to="instructor">
-        Instructor
+    <div class="aboutme">
+      <nuxt-link class="link" to="aboutme">
+        Über&nbsp;mich
+      </nuxt-link>
+    </div>
+    <div class="contact">
+      <nuxt-link class="link" to="contact">
+        Kontakt
       </nuxt-link>
     </div>
   </div>
@@ -45,16 +50,18 @@ export default {
   width: 79%;
 }
 .logo{
-  width: 40%;
+  padding: 15px;
 }
 .videos {
-  padding: 30px;
-  font-family: Dialog, Serif !important;
+  padding: 25px;
 }
 .plan {
-  padding: 30px;
+  padding: 25px;
 }
-.instructor {
-  padding: 30px;
+.aboutme{
+  padding: 25px;
+}
+.contact{
+  padding: 25px;
 }
 </style>

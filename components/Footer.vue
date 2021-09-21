@@ -13,6 +13,6 @@ export default {
 .bottom-footer{
   position: inherit;
   background-color: black;
-  height: 30vh;
+  height: 18vh;
 }
 </style>

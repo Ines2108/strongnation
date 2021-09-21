@@ -1,10 +1,10 @@
 <template>
-  <p>Über Ines Niedermaier</p>
+  <div></div>
 </template>
 
 <script>
 export default {
-  name: 'instructor'
+  name: 'contact.vue'
 }
 </script>
 
