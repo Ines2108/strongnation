@@ -5,12 +5,14 @@
         <img src="~/assets/close-button-png-30242.png" width="30" height="30">
       </div>
       <iframe
-        src="https://player.vimeo.com/video/464298473?h=22f46e67c6"
-        width="640"
-        height="360"
+        src="https://player.vimeo.com/video/612669466?h=a32d80c200&amp;title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        width="312"
+        height="640"
         frameborder="0"
         allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen></iframe>
+        allowfullscreen
+        title="STRONG Nation&amp;trade; by Ines">
+      </iframe>
     </div>
   </div>
 </template>

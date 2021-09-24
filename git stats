@@ -1,0 +1,96 @@
+[1mdiff --git a/pages/index.vue b/pages/index.vue[m
+[1mindex 42f1754..6500188 100644[m
+[1m--- a/pages/index.vue[m
+[1m+++ b/pages/index.vue[m
+[36m@@ -1,15 +1,18 @@[m
+ <template>[m
+   <div class="body">[m
+[31m-    <div class="header">[m
+[31m-      <h1>STRONG NATION® by Ines Niedermaier</h1>[m
+[32m+[m[32m    <div class="flex-header">[m
+[32m+[m[32m      <div class="box-strong">[m
+[32m+[m[32m        <div class="erste-ueberschrift">[m
+[32m+[m[32m          <h1>Get Strong</h1>[m
+[32m+[m[32m          <div class="zweiter-text">[m
+[32m+[m[32m            <p>by Ines Niedermaier</p>[m
+[32m+[m[32m            <button class="button-style" type="button">[m
+[32m+[m[32m             Vorschau ansehen[m
+[32m+[m[32m            </button>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+     </div>[m
+[31m-    <div class="flex-image">[m
+[31m-    <img src="../assets/flyer.png" height="900" width="614"/>[m
+[31m-    </div>[m
+[31m-    <p class="text">[m
+[31m-      Was ist Strong Nation?[m
+[31m-      STRONG NATION® ist ein revolutionäres, hochintensives Workout, das Dich an Deine Grenzen bringt. Die Musik ist eigens für die Workouts komponiert. Jede Kniebeuge, jeder Ausfallschritt und jede Bewegung hat ihre Entsprechung in den mitreißenden Beats. Werde eins mit der Musik und verausgabe Dich dabei vollkommen.[m
+[31m-    </p>[m
+   </div>[m
+ </template>[m
+ [m
+[36m@@ -18,16 +21,14 @@[m
+ </script>[m
+ [m
+ <style>[m
+[31m-.header {[m
+[31m-  background-color: slategray;[m
+[31m-  border: 25pt pink;[m
+[31m-  padding: 1vw 1vh;[m
+[31m-  text-align: center;[m
+[31m-}[m
+[31m-@media(max-width: 700px){[m
+[31m-  .body{[m
+[31m-    background: black;[m
+[31m-  }[m
+[32m+[m[32m.flex-header {[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  justify-content: flex-end;[m
+[32m+[m[32m  align-items: flex-start;[m
+[32m+[m[32m  background-image: url("~/assets/ines-background.jpg");[m
+[32m+[m[32m  padding: 21%;[m
+[32m+[m[32m  background-position: center;[m
+[32m+[m[32m  background-size: cover;[m
+ }[m
+ .body {[m
+   background: linear-gradient(to right, whitesmoke, slategray);[m
+[36m@@ -39,17 +40,28 @@[m
+   flex-flow: column;[m
+   height:95vh;[m
+ }[m
+[31m-.flyer{[m
+[31m-  width: 30vw;[m
+[31m-  height: 30vh;[m
+[31m-}[m
+[31m-.flex-image {[m
+[32m+[m[32m.box-strong{[m
+   display: flex;[m
+[31m-  justify-content: center;[m
+[31m-  align-items: center;[m
+[32m+[m[32m  justify-content: flex-end;[m
+[32m+[m[32m}[m
+[32m+[m[32m.button-style{[m
+[32m+[m[32m  border: 0;[m
+[32m+[m[32m  line-height: 2.5;[m
+[32m+[m[32m  padding: 0 20px;[m
+[32m+[m[32m  font-size: 1rem;[m
+[32m+[m[32m  text-align: center;[m
+[32m+[m[32m  color: #fff;[m
+[32m+[m[32m  text-shadow: 1px 1px 1px #000;[m
+[32m+[m[32m  border-radius: 10px;[m
+[32m+[m[32m  background-color: #ff4530;[m
+[32m+[m[32m  background-image: linear-gradient(to top left,[m
+[32m+[m[32m  rgba(0, 0, 0, .2),[m
+[32m+[m[32m  rgba(0, 0, 0, .2) 30%,[m
+[32m+[m[32m  rgba(0, 0, 0, 0));[m
+[32m+[m[32m  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),[m
+[32m+[m[32m  inset -2px -2px 3px rgba(0, 0, 0, .6);[m
+ }[m
+[31m-.text {[m
+[31m-  color:black;[m
+[31m-  font-family: Carlito,sans-serif;[m
+[32m+[m[32m.button-style:hover {[m
+[32m+[m[32m  background-color: orangered;[m
+ }[m
+ </style>[m
