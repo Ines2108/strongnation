@@ -1,32 +1,20 @@
 <template>
   <div class="top-header">
-    <div class="spacer">
-      <div class="logo">
-        <nuxt-link to="/">
-            <img src="../assets/homebutton.png" height="40" width="49">
-        </nuxt-link>
-      </div>
-    </div>
-    <div class="videos">
-      <nuxt-link class="link" to="videos">
-        Videos
-      </nuxt-link>
-    </div>
-    <div class="plan">
-      <nuxt-link class="link" to="kursplan">
-        Kursinfo
-      </nuxt-link>
-    </div>
-    <div class="aboutme">
-      <nuxt-link class="link" to="aboutme">
-        Über&nbsp;mich
-      </nuxt-link>
-    </div>
-    <div class="contact">
-      <nuxt-link class="link" to="contact">
-        Kontakt
-      </nuxt-link>
-    </div>
+    <nuxt-link class="logo" to="/">
+      <img src="../assets/homebutton.png" height="40" width="49">
+    </nuxt-link>
+    <nuxt-link class="link" to="videos">
+      Videos
+    </nuxt-link>
+    <nuxt-link class="link" to="kursplan">
+      Kursinfo
+    </nuxt-link>
+    <nuxt-link class="link" to="aboutme">
+      Über&nbsp;mich
+    </nuxt-link>
+    <nuxt-link class="link" to="contact">
+      Kontakt
+    </nuxt-link>
   </div>
 </template>
 
@@ -40,28 +28,15 @@ export default {
 .top-header{
   background: linear-gradient(to right, deeppink, orangered);
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em;
+  border-bottom: 1px solid black;
 }
 .link {
   color: black;
   text-decoration: none;
-  font-family: arial;
-}
-.spacer {
-  width: 79%;
-}
-.logo{
-  padding: 15px;
-}
-.videos {
-  padding: 25px;
-}
-.plan {
-  padding: 25px;
-}
-.aboutme{
-  padding: 25px;
-}
-.contact{
-  padding: 25px;
+  margin-left: 1em;
+  font-size: 1.1em;
 }
 </style>

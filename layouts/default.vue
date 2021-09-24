@@ -24,6 +24,7 @@ export default {
 <style>
 body {
   margin: 0;
+  font-family: sans-serif;
 }
 
 </style>
