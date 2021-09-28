@@ -1,18 +1,14 @@
 <template>
-  <div class="body">
+  <div>
     <div class="flex-header">
       <div class="box-strong">
-        <div class="erste-ueberschrift">
-          <h1 style="font-size: 6vh">Get Strong</h1>
-        <div class="zweiter-text">
-            <p style="font-size: 3vh">by Ines Niedermaier</p>
-         <div class="button-box">
-            <button class="button-style" type="button" @click="videoModalVisible = true">
-             Vorschau ansehen
-            </button>
-         </div>
+        <div class="title">Get Strong</div>
+        <div class="subtitle">
+          by Ines Niedermaier
         </div>
-        </div>
+        <button class="button-style" type="button" @click="videoModalVisible = true">
+          Vorschau ansehen
+        </button>
       </div>
     </div>
     <video-modal v-if="videoModalVisible" @close="close"></video-modal>
@@ -26,9 +22,9 @@
             Bewegt wird sich zu Originalmusik, die speziell auf jeden einzelnen Move abgestimmt wurde. Jede Kniebeuge, jeder Ausfallschritt,
             jeder Burpee wird von der Musik befeuert. So schaffst du es bis zur letzten Wiederholung – und hängst noch fünf weitere dran.</p>
         </diy>
-       <div class="link-style">
-         <a class="link-text" href="https://strong.zumba.com/de-DE/pages/class" target="_blank">Erfahre Mehr</a>
-       </div>
+        <div class="link-style">
+          <a class="link-text" href="https://strong.zumba.com/de-DE/pages/class" target="_blank">Erfahre Mehr</a>
+        </div>
       </div>
     </div>
   </div>
@@ -48,35 +44,33 @@ export default {
 </script>
 
 <style>
-.body {
-  background: linear-gradient(to right, whitesmoke, slategray);
-  max-width: 1264px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  flex-flow: column;
-  height:180vh;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-}
 .flex-header {
   background: url("~/assets/ines-background.jpg") no-repeat center;
   background-size: cover;
-  height: 104vh;
-  position: relative;
+  direction: rtl;
+  min-height: max(30em, 40vw);
 }
 .box-strong{
   display: flex;
-  justify-content: center;
-  margin: 7em;
-  line-height: 110%;
+  flex-flow: column;
+  width: 20vw;
+  margin: 2em;
+  margin-right: 15vw;
 }
-.button-box{
+.title {
+  font-size: 2.5em;
+  white-space: nowrap;
+}
+.subtitle {
+  font-size: 1.2em;
+  white-space: nowrap;
 }
 .button-style{
+  margin-top: 1em;
   border: 0;
   line-height: 2.5;
   padding: 0 20px;
+  width: 15em;
   font-size: 1rem;
   text-align: center;
   color: #fff;
@@ -94,17 +88,14 @@ export default {
   background-color: orangered;
 }
 .ff-block-wrap{
-  max-width: 67.8rem;
   display: flex;
   flex-flow: wrap;
-  position: relative;
-  padding-left: 13em;
-  padding-bottom: 32em;
+  width: 100%;
 }
 .ffb-image-wrap{
   display: flex;
-  height: 350px;
-  width: 501px;
+  width: 100%;
+  height: 50vw;
   background: url("~/assets/strongleft.png");
 }
 .was-ist-strong {
@@ -116,12 +107,12 @@ export default {
   margin-left: 10%;
 }
 .ffb-content-wrap{
-  flex: 0 0 31%;
-  min-height: 313px;
+  width: 100%;
   background: black;
   padding: 1%;
 }
 .description{
+  width: 100%;
   color: white;
   height: 6vh;
   padding: 0.2em;

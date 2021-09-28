@@ -1,8 +1,7 @@
 <template>
-<div>
+<div class="nuxtContainer">
   <TopHeader></TopHeader>
-  <div ></div>
-  <Nuxt></Nuxt>
+  <Nuxt style="display: flex; flex-direction: column;"></Nuxt>
   <Footer></Footer>
  </div>
 </template>
@@ -26,5 +25,4 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
-
 </style>

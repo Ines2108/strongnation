@@ -1,5 +1,6 @@
 <template>
 <div class="bottom-footer">
+Impressum
 </div>
 </template>
 
@@ -13,6 +14,7 @@ export default {
 .bottom-footer{
   position: inherit;
   background-color: black;
+  color: white;
   height: 18vh;
 }
 </style>
