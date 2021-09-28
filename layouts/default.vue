@@ -1,8 +1,7 @@
 <template>
-<div>
+<div class="nuxtContainer">
   <TopHeader></TopHeader>
-  <div ></div>
-  <Nuxt></Nuxt>
+  <Nuxt style="display: flex; flex-direction: column;"></Nuxt>
   <Footer></Footer>
  </div>
 </template>
@@ -21,6 +20,9 @@ export default {
 
 </script>
 
-<style scoped>
-
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
 </style>
