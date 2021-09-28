@@ -1,11 +1,11 @@
 <template>
-  <div>
-  </div>
+<div>
+</div>
 </template>
 
 <script>
 export default {
-  name: 'anmeldung.vue'
+  name: 'impressum.vue'
 }
 </script>
 

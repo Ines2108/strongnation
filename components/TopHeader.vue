@@ -12,11 +12,6 @@
         Videos
       </nuxt-link>
     </div>
-    <div class="plan">
-      <nuxt-link class="link" to="kursplan">
-        Kursinfo
-      </nuxt-link>
-    </div>
     <div class="aboutme">
       <nuxt-link class="link" to="aboutme">
         Über&nbsp;mich
@@ -24,7 +19,7 @@
     </div>
     <div class="contact">
       <nuxt-link class="link" to="contact">
-        Kontakt
+        Kursinfo & Kontakt
       </nuxt-link>
     </div>
   </div>
