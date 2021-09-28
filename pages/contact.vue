@@ -1,5 +1,15 @@
 <template>
-  <div></div>
+  <div class="contact-body">
+    <div class="section-right">
+      <form>
+        <h1>Bei Fragen zum Kurs kontaktiere mich</h1>
+        <input name="name" type="text" class="feedback-input" placeholder="Name" />
+        <input name="email" type="text" class="feedback-input" placeholder="Email" />
+        <textarea name="text" class="feedback-input" placeholder="Nachricht"></textarea>
+        <input type="submit" value="Senden"/>
+     </form>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -9,5 +19,62 @@ export default {
 </script>
 
 <style scoped>
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+.contact-body {
+background: linear-gradient(to right, whitesmoke, slategray);
+max-width: 1264px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+margin: 0 auto;
+flex-flow: column;
+height:40vw;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.section-right{
+  width: 40vw;
+}
 
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:gray;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
 </style>
