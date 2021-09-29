@@ -1,47 +1,42 @@
 <template>
-<div class="bottom-footer">
-  <div class="footer-left-section">
-    <ul>
-      <li>
-        <a href="https://www.facebook.com/ines.niedermaier/" target="_blank"><img src="../assets/FacebookIcon.png" height="40em" width="49em"></a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/niedi_i/" target="_blank"><img src="../assets/NicePng_instagram-circle-logo-png_475136.png" height="40" width="49"></a>
-      </li>
-    </ul>
-  </div>
-  <div class="footer-middle-section">
-  </div>
-  <div class="footer-right-section">
-    <ul style="margin-top: 1vw">
-      <div>
-       <nuxt-link class="footer-link" to="/">
-          Startseite
-       </nuxt-link>
-      </div>
-      <div>
-      <nuxt-link class="footer-link" to="videos">
-        Videos
-      </nuxt-link>
-      </div>
-      <div>
-        <nuxt-link class="footer-link" to="aboutme">
-          Über&nbsp;mich
-        </nuxt-link>
-      </div>
-      <div>
-        <nuxt-link class="footer-link" to="contact">
-          Kursinfo & Kontakt
-        </nuxt-link>
-      </div>
-      <div>
+  <div class="footer">
+    <div class="footer-icons">
+          <a href="https://www.facebook.com/ines.niedermaier/" target="_blank"><img src="../assets/FacebookIcon.png" height="40em" width="49em"></a>
+          <a href="https://www.instagram.com/niedi_i/" target="_blank"><img src="../assets/NicePng_instagram-circle-logo-png_475136.png" height="40" width="49"></a>
+    </div>
+    <div class="footer-middle-section">
+      <img src="../assets/thebeat.png" width="150" height="162" style="border-radius: 40%">
+    </div>
+    <div class="footer-link-section">
+      <ul>
+        <div>
+          <nuxt-link class="footer-link" to="/">
+            Startseite
+          </nuxt-link>
+        </div>
+        <div>
+          <nuxt-link class="footer-link" to="videos">
+            Videos
+          </nuxt-link>
+        </div>
+        <div>
+          <nuxt-link class="footer-link" to="aboutme">
+            Über&nbsp;mich
+          </nuxt-link>
+        </div>
+        <div>
+          <nuxt-link class="footer-link" to="contact">
+            Kursinfo & Kontakt
+          </nuxt-link>
+        </div>
+        <div>
           <nuxt-link class="footer-link" to="impressum">
             Impressum
           </nuxt-link>
-      </div>
-    </ul>
+        </div>
+      </ul>
+    </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -51,39 +46,47 @@ export default {
 </script>
 
 <style scoped>
-.bottom-footer{
+.footer{
+  margin-top: 10px;
+  background: black;
   display: flex;
-  justify-content: center;
-  position: inherit;
-  background-color: black;
-  height: 12vw;
-}
-.footer-left-section{
-  display: flex;
-  width: 10vw;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
 }
-li {
-  list-style-type: none;
+@media (min-width:1024px) {
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
-li img {
-  margin-top: 1em;
+.footer-icons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2em;
+}
+a {
+  margin-right: 1em;
+}
+@media (min-width:1024px) {
+  .footer-icons {
+    flex-direction: column;
+  }
+  a{
+    margin-bottom: 1em;
+  }
 }
 .footer-middle-section {
   align-self: center;
-  background-image: url("~/assets/thebeat.png");
-  background-position: center;
-  background-size: cover;
-  border-radius: 30%;
-  width: 9vw;
-  height: 8vw;
 }
-.footer-right-section {
+.footer-link-section {
   display: flex;
   align-items: center;
 }
 .footer-link {
   text-decoration: none;
   color: white;
+  line-height: 2em;
 }
 </style>

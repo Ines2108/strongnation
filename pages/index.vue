@@ -89,14 +89,21 @@ export default {
 }
 .ff-block-wrap{
   display: flex;
-  flex-flow: wrap;
+  flex-direction: column;
   width: 100%;
+}
+@media (min-width: 1024px) {
+  .ff-block-wrap {
+    flex-direction: row;
+  }
 }
 .ffb-image-wrap{
   display: flex;
   width: 100%;
   height: 50vw;
   background: url("~/assets/strongleft.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .was-ist-strong {
   display: flex;
