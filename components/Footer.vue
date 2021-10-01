@@ -47,7 +47,6 @@ export default {
 
 <style scoped>
 .footer{
-  margin-top: 10px;
   background: black;
   display: flex;
   justify-content: flex-start;
