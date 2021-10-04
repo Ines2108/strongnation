@@ -1,5 +1,7 @@
 <template>
   <div class="contact-body">
+    <div class="section-left">
+    </div>
     <div class="section-right">
       <form>
         <h1>Bei Fragen zum Kurs kontaktiere mich</h1>
@@ -21,18 +23,15 @@ export default {
 <style scoped>
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 .contact-body {
-background: linear-gradient(to right, whitesmoke, slategray);
 max-width: 1264px;
 width: 100%;
 display: flex;
-justify-content: space-between;
+justify-content: flex-start;
 margin: 0 auto;
 flex-flow: column;
-height:40vw;
 font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 .section-right{
-  width: 40vw;
 }
 
 form { max-width:420px; margin:50px auto; }
